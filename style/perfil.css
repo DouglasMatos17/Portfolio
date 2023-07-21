@@ -1,0 +1,66 @@
+.perfil{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.perfil-left{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/imagens/Perfil\ fundo.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.perfil-left-nuvem{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.4962359943977591) 65%, rgba(0,0,0,1) 100%);
+
+}
+
+
+.perfil-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    background-color: black;
+}
+
+.perfil-right-card{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    gap: 15px;
+}
+
+.perfil-right-card h1{
+    font-size: 40px;
+}
+
+.skill{
+    display: flex;
+}
+.skill h3{
+    font-size: 20px;
+    background-color: rgba(240, 255, 255, 0.274);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button{
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
