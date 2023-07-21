@@ -1,3 +1,5 @@
+
+
 .lobby{
     display: flex;
     height: 100vh;
@@ -19,7 +21,8 @@
 
 .name{
     font-size: 50px;
-    color: aquamarine;
+    font-weight: 700;
+    color: rgb(160, 100, 255);
 }
 
 .lobby-left img{
@@ -65,7 +68,7 @@
 .lobby-perfil img{
     display: flex;
     border-radius: 50%;
-    box-shadow: 0px 0px 15px rgba(4, 247, 206, 0.911);
+    box-shadow: 0px 0px 15px rgba(132, 38, 255, 0.911);
 }
 
 .lobby-social{
@@ -74,7 +77,7 @@
     justify-content: center;
     gap: 30px;
 
-    background-color: rgba(240, 248, 255, 0.377);
+    background-color: rgba(240, 248, 255, 0.055);
     border-radius: 10px;
 }
 

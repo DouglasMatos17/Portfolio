@@ -1,0 +1,42 @@
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: rgb(12,131,162);
+    background: linear-gradient(45deg, rgba(12,131,162,1) 0%, rgba(75,30,105,1) 50%, rgba(136,32,180,1) 100%);
+}
+
+.projetos-card{
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    width: 400px;
+    height: 600px;
+
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 20px black;
+    background-image: url(/imagens/principal.jpg);
+    background-position: center;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.card-info button{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    backdrop-filter: blur( 13.5px );
+    box-shadow: 2px 2px 7px black;
+}

@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/lobby.css">
     <link rel="stylesheet" href="style/perfil.css">
+    <link rel="stylesheet" href="style/projetos.css">
+    <link rel="stylesheet" href="style/contatos.css">
     <title>Portifólio</title>
 </head>
 <body>
     <header>
         <div class="nav">
-            <div><a href="#">Douglas Matos</a></div>
+            <div><a href="#perfil">Meu Portfólio</a></div>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#lobby">Inicio</a></li>
+                <li><a href="#perfil">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </div>
     </header> <!--Navegação-->  
-    <section class="lobby">
+   
+    <section class="lobby" id="lobby">
         <div class="lobby-left">
             <div class="lobby-msg">
                 <h1>Olá,</h1>
@@ -43,10 +46,10 @@
                     </div>
                    
                     <div class="lobby-social">
-                        <a href="#">
+                        <a href="https://github.com/DouglasMatos17" target="_blank">
                             <img src="imagens/github.png" alt="Logo GitHub"></a>
                         
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/douglasmatos17/" target="_blank">
                             <img src="imagens/linkedin.png" alt="Logo Linkedin"></a>
                     </div>
                 </div>
@@ -54,7 +57,7 @@
         </div>
     </section> <!--Introdução--> 
 
-    <section class="perfil">
+    <section class="perfil" id="perfil">
         <div class="perfil-left">
             <div class="perfil-left-nuvem">
             </div>
@@ -80,6 +83,21 @@
             </div>
         </div>
 
+    </section><!--Perfil-->
+
+    <section class="projetos" id="projetos">
+        <div class="projetos-card">
+            <div class="card-info">
+                <h1>VivacidadeWeb</h1>
+                <p>Empresa de tecnologia ficticia</p>
+                <button type="reset">Ir a pagina</button>
+            </div>
+        </div>
     </section>
+
+    <Section class="contatos" id="contatos">
+        <h1>Esta seção ainda esta em criação...</h1>
+        <h2>Esta pagina esta diariamente sendo trabalhada junto com meus estudos, agradeço a compreenção!</h2>
+    </Section>
 </body>
 </html>
