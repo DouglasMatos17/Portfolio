@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style/perfil.css">
     <link rel="stylesheet" href="style/projetos.css">
     <link rel="stylesheet" href="style/contatos.css">
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="style/skills.css">
+    <title>Portfólio</title>
 </head>
 <body>
     <header>
@@ -19,6 +20,7 @@
                 <li><a href="#lobby">Inicio</a></li>
                 <li><a href="#perfil">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
         </div>
@@ -32,9 +34,9 @@
                 <h1 class="name">Douglas Matos</h1>
             </div>
             <div class="lobby-prof">
-                <img src="imagens/html5.png" alt="Logo html5">
-                <img src="imagens/css3.png" alt="Logo css3">
-                <img src="imagens/logo-js.png" alt="Logo Java Script">
+                <a href="#skills"><img src="imagens/html5.png" alt="Logo html5"></a>
+                <a href="#skills"><img src="imagens/css3.png" alt="Logo css3"></a>
+                <a href="#skills"><img src="imagens/logo-js.png" alt="Logo Java Script"></a>
             </div>
         </div>
 
@@ -75,9 +77,10 @@
                 <p>Baixe meu curriculo no botão abaixo.</p>
 
                 <div class="button">
-                    <button>
-                        Download
-                    </button>
+                    
+                    <a href="arquivos/Curriculo Douglas Matos.pdf" target="_blank">
+                        <button class="button"> Download</button></a>
+                    
                 </div>
 
             </div>
@@ -90,14 +93,57 @@
             <div class="card-info">
                 <h1>VivacidadeWeb</h1>
                 <p>Empresa de tecnologia ficticia</p>
-                <button type="reset">Ir a pagina</button>
+                <button><a href="https://page-vivacidade-web-ficticia.vercel.app/" target="_blank"> Ir para o site</a> </button>
             </div>
         </div>
-    </section>
+    </section><!--Projetos-->
+    
+    <section class="skills" id="skills">
+        <div class="skills-lateral-nuvem">
+            <div class="skills-lateral"></div>
+        </div>
+        <div class="skills-cont">
+            <div class="skill-card">
+                <img src="imagens/html5.png" alt="Logo HTML5">
+                <div class="text-skill">
+                    <h1>HTML5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo nesciunt asperiores dignissimos, cumque magnam quaerat blanditiis at odit laudantium nemo suscipit labore facilis libero officia vel nisi iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ipsam fugiat dolorum accusantium nam tempore laborum, repellat excepturi praesentium possimus autem totam, doloremque asperiores explicabo similique ipsum id magni. At!</p>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="imagens/css3.png" alt="Logo CSS3">
+                <div class="text-skill">
+                    <h1>CSS3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo nesciunt asperiores dignissimos, cumque magnam quaerat blanditiis at odit laudantium nemo suscipit labore facilis libero officia vel nisi iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ex minima a eius repudiandae laboriosam delectus fuga optio molestias, corporis sequi numquam distinctio quae facilis, eligendi officia facere necessitatibus quis.</p>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="imagens/logo-js.png" alt="Logo JavaScript">
+                <div class="text-skill">
+                    <h1>JavaScript</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo nesciunt asperiores dignissimos, cumque magnam quaerat blanditiis at odit laudantium nemo suscipit labore facilis libero officia vel nisi iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eligendi commodi incidunt dolorem at, repudiandae molestiae odit eum necessitatibus minus optio labore delectus, laborum accusantium dolorum atque earum, ducimus numquam.</p>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="imagens/logo-github.png" alt="Logo GitHub">
+                <div class="text-skill">
+                    <h1>GitHub</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo nesciunt asperiores dignissimos, cumque magnam quaerat blanditiis at odit laudantium nemo suscipit labore facilis libero officia vel nisi iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum quam quibusdam obcaecati error maiores dolorum dicta enim eligendi, modi magni dolorem consequatur porro animi deleniti molestias dolore dignissimos esse?</p>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="imagens/logo-git.png" alt="Logo Git">
+                <div class="text-skill">
+                    <h1>Git</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo nesciunt asperiores dignissimos, cumque magnam quaerat blanditiis at odit laudantium nemo suscipit labore facilis libero officia vel nisi iure?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptas consequatur tempore enim quaerat nihil dignissimos aut nam vel vitae quos, odit nisi sunt non, ab facilis vero illum ullam!</p>
+                </div>
+            </div>
+        </div>
+    </section><!--Skills-->
 
     <Section class="contatos" id="contatos">
         <h1>Esta seção ainda esta em criação...</h1>
         <h2>Esta pagina esta diariamente sendo trabalhada junto com meus estudos, agradeço a compreenção!</h2>
-    </Section>
+    </Section><!--Contatos-->
 </body>
 </html>

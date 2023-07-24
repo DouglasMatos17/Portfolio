@@ -1,0 +1,46 @@
+.skills{
+    display: flex;
+    background: black;
+    color: white;
+    gap: 30px;
+}
+
+.skills-lateral-nuvem{
+    display: flex;
+    background-image: url(/imagens/principal.jpg);
+    background-size: cover;
+    position: relative;
+    width: 50%;
+}
+.skills-lateral{
+    display: flex;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.4962359943977591) 65%, rgba(0,0,0,1) 100%);
+    width: 100%;
+}
+
+.skills-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-block: 55px;
+    gap: 55px;
+}
+
+.skills img{
+    width: 150px;
+}
+
+.skill-card{
+    display: flex;
+    gap: 30px;
+
+}
+
+.text-skill{ 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 450px;
+     gap: 10px;
+}
