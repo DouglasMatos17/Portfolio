@@ -2,14 +2,13 @@
     display: flex;
     background: black;
     color: white;
-    gap: 30px;
 }
 
 .skills-lateral-nuvem{
     display: flex;
     background-image: url(/imagens/principal.jpg);
     background-size: cover;
-    width: 50%;
+    width: 40%;
 }
 .skills-lateral{
     display: flex;
@@ -21,17 +20,20 @@
 .skills-cont{
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    padding-block: 55px;
+    width: 60%;
+    padding: 5vw;
     gap: 55px;
 }
 
 .skills img{
     width: 150px;
+    height: 176px;
 }
 
 .skill-card{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 
 }
@@ -40,6 +42,5 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
-     max-width: 450px;
      gap: 10px;
 }
