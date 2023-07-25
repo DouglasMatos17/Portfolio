@@ -9,7 +9,6 @@
     display: flex;
     background-image: url(/imagens/principal.jpg);
     background-size: cover;
-    position: relative;
     width: 50%;
 }
 .skills-lateral{

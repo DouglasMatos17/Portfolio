@@ -61,3 +61,24 @@ a{
     display: flex;
     padding-left: 30px;
 }
+
+.lobby-social-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 94vw;
+    margin-top: 79vh;
+
+    padding: 8px;
+    gap: 10px;
+
+    background-color: rgba(240, 248, 255, 0.226);
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px black;
+    backdrop-filter: blur(2px);
+}
+.lobby-social-nav img{
+    width: 40px;
+}
