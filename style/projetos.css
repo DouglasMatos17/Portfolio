@@ -54,3 +54,14 @@
     opacity: .4;
     transform: scale(0.9);
 }
+
+@media (max-width: 1500px){
+
+    .projetos{
+        flex-wrap: wrap;
+        height: auto;
+        gap: 50px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}

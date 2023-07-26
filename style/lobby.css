@@ -83,3 +83,61 @@
     background-color: rgba(240, 248, 255, 0.226);
     border-radius: 10px;
 }
+
+
+
+@media (max-width: 850px){
+
+    .lobby-perfil img{
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .lobby {
+       flex-direction: column-reverse;
+       
+    }
+
+    .lobby-right, .lobby-left{
+        width: 100%;
+        height: 50%;
+    }
+
+    .lobby-card{
+        padding-top: 60px;
+    }
+
+    .lobby-perfil img{
+        width: 250px;
+
+    }
+
+    
+}
+
+@media (max-height: 700px){
+
+    .lobby{
+        height: auto;
+    }
+
+    .lobby-left{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .lobby-card{
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 400px){
+    h1, .name{
+        font-size: 35px;
+    }
+}

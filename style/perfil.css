@@ -70,3 +70,71 @@
     color: white;
     box-shadow: 1px 1px 15px #b300ff94;
 }
+
+
+@media (max-width: 900px){
+
+    .perfil{
+        height: auto;
+    }
+
+    .perfil-left{
+        width: 40%;
+    }
+
+    .perfil-right{
+        width: 60%;
+    }
+    .perfil-right-card{
+        padding: 15px;
+        padding-right: 70px;
+
+    }
+}
+
+@media (max-width: 850px){
+
+    .perfil-left{
+        width: 30%;
+    }
+
+    .perfil-right{
+        width: 70%;
+    }
+
+}
+@media (max-width: 750px){
+    .perfil-left{
+        width: 10%;
+    }
+
+    .perfil-right{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+
+    .perfil-left{
+        width: 0%;
+    }
+
+    .perfil-right{
+        width: 100%;
+    }
+}
+
+@media (max-height: 600px){
+
+    .perfil{
+        height: auto;
+    }
+}
+
+@media (max-height: 400px){
+
+    .perfil-right-card{
+        padding: 5px;
+        padding-right: 20px;
+    }
+}
