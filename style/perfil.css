@@ -48,10 +48,10 @@
     font-size: 40px;
 }
 
-.skill{
+.perfil-skill{
     display: flex;
 }
-.skill h3{
+.perfil-skill h3{
     font-size: 20px;
     background-color: rgba(240, 255, 255, 0.274);
     border-radius: 8px;
@@ -61,7 +61,6 @@
 .button-curriculo{
     display: flex;
     border-radius: 20px;
-    padding: 13px 40px;
     cursor: pointer;
     font-size: 20px;
     margin-top: 40px;
@@ -71,6 +70,11 @@
     box-shadow: 1px 1px 15px #b300ff94;
 }
 
+.button-curriculo a{
+    display: flex;
+    padding: 20px;
+    padding-inline: 45px;
+}
 
 @media (max-width: 900px){
 
