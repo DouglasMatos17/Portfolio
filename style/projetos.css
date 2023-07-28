@@ -44,7 +44,6 @@
 
 .projetos-card{
     transition: 0.5s;
-    cursor: pointer;
 }
 
 .projetos:hover > :not(:hover){

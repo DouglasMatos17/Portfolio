@@ -24,12 +24,12 @@ a{
 
 ::-webkit-scrollbar{
     background: black;
-    width: 4px;
+    width: 9px;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: rgb(90, 14, 161);
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 
