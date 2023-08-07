@@ -3,16 +3,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-height: 1080px;
 
     background: rgb(12,131,162);
     background: linear-gradient(45deg, rgba(12,131,162,1) 0%, rgba(75,30,105,1) 50%, rgba(136,32,180,1) 100%);
     gap: 5%;
 }
 
+.container-proj{
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
 .projetos-card{
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 20px;
     width: 300px;
     height: 500px;
 
@@ -20,14 +24,39 @@
     border-radius: 10px;
 
     box-shadow: 5px 5px 20px black;
-    background-image: url(/imagens/principal.jpg);
-    background-position: center;
+    overflow-y: scroll; /* esse atributo faz com q tudo q esteja no eixo Y que saia da div seja ocultado*/
 }
 
 .card-info{
     display: flex;
     flex-direction: column;
+ 
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    
+    z-index: 100;
 }
+
+.projetos-card img{
+    width: 300px;
+    top: 0px;
+}
+
+.projetos-card::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0);
+    width: 3px;
+    display: none;
+}
+
+.projetos-card::-webkit-scrollbar-thumb{
+    background-color: rgb(90, 14, 161);
+    border-radius: 50px;
+}
+
+
+
+
 
 .bt-proj{
     display: flex;
@@ -39,10 +68,16 @@
     box-shadow: 2px 2px 7px black;
     backdrop-filter: blur( 13.5px );
     border-radius: 15px;
+    transition: all 1s;
+}
+
+.bt-proj:hover{
+    background-color: blueviolet;
+    box-shadow: 1px 1px 15px black;
 }
 
 
-.projetos-card{
+.container-proj{
     transition: 0.5s;
 }
 
