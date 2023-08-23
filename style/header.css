@@ -74,6 +74,7 @@ a{
     width: 0%;
     height: 7px;
     border-radius: 3px;
+    transition: .7s;
     
 
     background-color: #7313ce;
@@ -81,7 +82,7 @@ a{
 
 .nav li:hover a::after{
     width: 130%;
-    transition: .8s;
+    
 }
 
 
@@ -104,6 +105,7 @@ a{
     box-shadow: 3px 3px 7px black;
     backdrop-filter: blur(2px);
     z-index: 1000;
+    transition: .7s;
 }
 .lobby-social-nav img{
     width: 40px;
@@ -111,8 +113,6 @@ a{
 
 .lobby-social-nav:hover{
     transform: scale(120%);
-    transition: 1s;
-
     bottom: 5vh;
     right: 2vw;
     background-color: #9d9b9e83;

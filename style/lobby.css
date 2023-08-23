@@ -28,11 +28,11 @@
 
 .lobby-left img{
     width: 45px;
+    transition: 0.5s;
 }
 
 .lobby-left img:hover{
     transform: scale(200%);
-    transition: 0.5s;
 }
 
 .lobby-prof{ 

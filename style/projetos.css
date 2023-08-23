@@ -29,7 +29,7 @@
 .card-info{
     display: flex;
     flex-direction: column;
- 
+    
     position: absolute;
     top: 400px;
     left: 20px;
