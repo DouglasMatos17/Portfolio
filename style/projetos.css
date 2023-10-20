@@ -1,38 +1,47 @@
 .projetos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
     background: rgb(12,131,162);
     background: linear-gradient(45deg, rgba(12,131,162,1) 0%, rgba(75,30,105,1) 50%, rgba(136,32,180,1) 100%);
-    gap: 5%;
 }
 
-.container-proj{
-    width: 300px;
-    height: 500px;
+.projetos .titulo{
+    font-size: 50px;
+    margin: 50px;
+}
+
+.projetos .container{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0);
+    margin: 50px;
+    gap: 55px;
+
+}
+
+.projetos .card{
+    width: 650px;
+    height: 450px;
     position: relative;
-}
-
-.projetos-card{
-    width: 300px;
-    height: 500px;
-
-
     border-radius: 10px;
 
     box-shadow: 5px 5px 20px black;
-    overflow-y: scroll; /* esse atributo faz com q tudo q esteja no eixo Y que saia da div seja ocultado*/
+
+}
+.projetos .resumo{
+    margin-top: 55px;
+    width: 550px;
 }
 
-.card-info{
+.projetos .card .info{
     display: flex;
     flex-direction: column;
     
     position: absolute;
-    top: 400px;
-    left: 20px;
+    bottom: 30px;
+    right: 40px;
     
     z-index: 100;
 }
@@ -80,10 +89,7 @@
     transition: 0.5s;
 }
 
-.projetos:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(0.9);
-}
+
 
 @media (max-width: 1500px){
 

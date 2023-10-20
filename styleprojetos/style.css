@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.proj-itens{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.proj-itens div{
+    width: 340px;
+    height: 390px;
+    background-color: aqua;
+}
