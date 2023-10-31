@@ -1,25 +1,73 @@
 .projetos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
     background: rgb(12,131,162);
     background: linear-gradient(45deg, rgba(12,131,162,1) 0%, rgba(75,30,105,1) 50%, rgba(136,32,180,1) 100%);
+    height:700px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: height 1.3s;
+}
+
+.projetos.show{
+    height: 3950px;
 }
 
 .projetos .titulo{
     font-size: 50px;
-    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
-.projetos .container{
+.projetos .chamada{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projetos .chamada .container{
+    width: 800px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.projetos .btn-projetos{
+    width: 200px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.projetos .container-left{
+    display: none;
     background-color: rgba(0, 255, 255, 0);
     margin: 50px;
     gap: 55px;
-
+    transform: translateX(-2000px);
+    transition: transform 1.3s;
 }
+
+.projetos .container-right{
+    display: none;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 255, 255, 0);
+    margin: 50px;
+    gap: 55px;
+    transform: translateX(2000px);
+    transition: transform 1.3s;
+}
+
+.projetos .container-left.leftOn{
+    transform: translateX(0px);
+}
+
+.projetos .container-right.rightOn{
+    transform: translateX(0px);
+}
+
 
 .projetos .card{
     width: 650px;
@@ -30,9 +78,15 @@
     box-shadow: 5px 5px 20px black;
 
 }
+
+.projetos .resumo h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
 .projetos .resumo{
     margin-top: 55px;
     width: 550px;
+    line-height: 27px;
 }
 
 .projetos .card .info{
@@ -45,25 +99,6 @@
     
     z-index: 100;
 }
-
-.projetos-card img{
-    width: 300px;
-    top: 0px;
-}
-
-.projetos-card::-webkit-scrollbar{
-    background: rgba(0, 0, 0, 0);
-    width: 3px;
-    display: none;
-}
-
-.projetos-card::-webkit-scrollbar-thumb{
-    background-color: rgb(90, 14, 161);
-    border-radius: 50px;
-}
-
-
-
 
 
 .bt-proj{
@@ -101,3 +136,4 @@
         padding-bottom: 70px;
     }
 }
+
