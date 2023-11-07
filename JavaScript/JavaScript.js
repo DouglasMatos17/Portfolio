@@ -41,7 +41,6 @@ function hideProjetos(projetos){
     console.log('Projetos Desativado')
 }
 
-/* Função que verifica se os projetos estão ocultos ou a mostra e inverte a situação*/ 
 function toggleContainers(containers) {
     containers.forEach(function(container) {
         if (container.classList.contains('leftOn')) {
