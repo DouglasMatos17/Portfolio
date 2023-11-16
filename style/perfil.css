@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100%;
     max-height: 1080px;
+    min-height: 900px
 }
 
 
@@ -62,6 +63,7 @@
 .perfil-right-card p{
     line-height: 24px;
     font-size: 17px;
+    text-align: justify;
 }
 
 .btn-curriculo{
@@ -145,20 +147,5 @@
 
     .perfil-right{
         width: 100%;
-    }
-}
-
-@media (max-height: 600px){
-
-    .perfil{
-        height: auto;
-    }
-}
-
-@media (max-height: 400px){
-
-    .perfil-right-card{
-        padding: 5px;
-        padding-right: 20px;
     }
 }

@@ -1,23 +1,48 @@
-var container_left = document.querySelectorAll(".container-left");
-var container_right = document.querySelectorAll(".container-right");
-var projetos = document.querySelector("#projetos")
-var btn = document.querySelector('#btn-projetos');
+var containersLeft = document.querySelectorAll(".container-left");
+var containersRight = document.querySelectorAll(".container-right");
+var projetos = document.querySelector("#projetos");
+var btnProjetos = document.querySelector('#btn-projetos');
 
-btn.addEventListener('click', function() {
-    toggleContainers(container_left);
-    toggleContainers(container_right);
+var containersAtivados = false;
+var projetosAtivados = false;
+
+/* Escutador de eventos no botão */
+btnProjetos.addEventListener('click', function() {
+    toggleContainers(containersLeft);
+    toggleContainers(containersRight);
 });
 
-/* Função que esconde os projetos caso esteja ativado*/
+/* Função que verifica a situação dos contêineres e decide quais funções chamar:
+   hideContainer para ocultar e showContainer para mostrar */
+function toggleContainers(containers) {
+    containers.forEach(function(container) {
+        if (container.classList.contains('leftOn')) {
+            hideContainer(container);
+            if (containersAtivados) {
+                console.log('Containers Desativados');
+                containersAtivados = false;
+            }
+            hideProjetos(projetos);
+        } else {
+            showProjetos(projetos);
+            showContainer(container);
+            if (!containersAtivados) {
+                console.log('Containers Ativados');
+                containersAtivados = true;
+            }
+        }
+    });
+}
+
+/* Função que esconde os projetos caso esteja ativado */
 function hideContainer(container) {
     container.classList.remove('leftOn', 'rightOn');
     setTimeout(function () {
         container.style.display = "none";
-    }, 800);
-    console.log('Containers Desativados');
+    }, 1000);
 }
 
-/* Função que mostra os projetos caso esteja desativada*/
+/* Função que mostra os projetos caso esteja desativada */
 function showContainer(container) {
     setTimeout(function () {
         container.style.display = "flex";
@@ -26,29 +51,28 @@ function showContainer(container) {
     setTimeout(function () {
         container.classList.add('leftOn', 'rightOn');
     }, 200);
-    console.log('Containers Ativado');
 }
 
-/* Função que aumenta a altura da parte dos projetos*/
+/* Função que aumenta a altura da parte dos projetos */
 function showProjetos(projetos){
+
+    btnProjetos.textContent = 'Fechar Projetos'
+
     projetos.classList.add('show')
-    console.log('Projetos Ativado')
+    if (!projetosAtivados) {
+        console.log('Projetos Ativados');
+        projetosAtivados = true;
+    }
 }
 
-/*Função que reduz a altura da parte projetos*/
+/* Função que reduz a altura da parte projetos */
 function hideProjetos(projetos){
-    projetos.classList.remove('show')
-    console.log('Projetos Desativado')
-}
 
-function toggleContainers(containers) {
-    containers.forEach(function(container) {
-        if (container.classList.contains('leftOn')) {
-            hideContainer(container);
-            hideProjetos(projetos);
-        } else {
-            showProjetos(projetos);
-            showContainer(container);
-        }
-    });
+    btnProjetos.textContent = 'Ver Projetos'
+
+    projetos.classList.remove('show')
+    if (projetosAtivados) {
+        console.log('Projetos Desativados');
+        projetosAtivados = false;
+    }
 }

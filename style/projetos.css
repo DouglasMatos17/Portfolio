@@ -5,14 +5,16 @@
     align-items: center;
     background: rgb(8, 83, 102);
     background: linear-gradient(45deg, rgb(9, 92, 112) 0%, rgb(49, 19, 70) 50%, rgb(97, 23, 129) 100%);
-    height:900px;
+    min-height: 900px;
+    max-height: 900px;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: height 1.3s;
+    transition: 1s ease-in-out;
+    text-align: justify;
 }
 
 .projetos.show{
-    height: 5200px;
+    max-height: 9000px;
 }
 
 .projetos .titulo{
@@ -30,7 +32,6 @@
     width: 800px;
     font-size: 18px;
     line-height: 32px;
-    text-align: center;
 }
 
 .projetos .btn-projetos{
@@ -53,23 +54,29 @@
 
 .projetos .container-left{
     display: none;
-    background-color: rgba(0, 255, 255, 0);
-    margin: 50px;
-    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 80px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+    margin: 10px;
+    margin-bottom: 100px;
     gap: 55px;
     transform: translateX(-2000px);
-    transition: transform 1.3s;
+    transition: transform 1s;
 }
 
 .projetos .container-right{
     display: none;
     flex-direction: row-reverse;
-    background-color: rgba(0, 255, 255, 0);
-    margin: 50px;
-    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 80px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+    margin: 10px;
+    margin-bottom: 100px;
     gap: 55px;
     transform: translateX(2000px);
-    transition: transform 1.3s;
+    transition: transform 1s;
 }
 
 .projetos .container-left.leftOn{
@@ -87,7 +94,6 @@
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 20px black;
-
 }
 
 .projetos .card img{
@@ -157,13 +163,15 @@
         flex-direction: column;
     }
 
+    .projetos .resumo{
+        width: 800px;
+    }
+
     .projetos .container-left{
         display: flex;
         flex-direction: column;
-    }
-
-    .projetos.show{
-        height: 7900px;
+        width: 60%;
+        align-items: center;
     }
 }
 
@@ -179,23 +187,11 @@
         width: 700px;
         font-size: 16px;
         line-height: 32px;
-        text-align: center;
     }
 
     .projetos .card{
         width: 100%;
         height: auto;
-    }
-
-    .projetos.show{
-        height: 7700px;
-    }
-
-}
-
-@media (max-width: 850px){
-    .projetos.show{
-        height: 7500px;
     }
 }
 
@@ -212,17 +208,6 @@
         width: 600px;
         font-size: 16px;
         line-height: 32px;
-        text-align: center;
-    }
-
-    .projetos.show{
-        height: 7400px;
-    }
-}
-
-@media (max-width: 750px){
-    .projetos.show{
-        height: 7200px;
     }
 }
 
@@ -238,15 +223,10 @@
         width: 400px;
         font-size: 15px;
         line-height: 25px;
-        text-align: center;
     }
 
     .projetos .resumo{
         width: auto;
-    }
-
-    .projetos.show{
-        height: 7000px;
     }
 }
 
@@ -262,48 +242,5 @@
         width: 330px;
         font-size: 15px;
         line-height: 25px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 530px){
-    .projetos.show{
-        height: 7100px;
-    }
-}
-
-@media (max-width: 480px){
-    .projetos.show{
-        height: 7200px;
-    }
-}
-
-@media (max-width: 450px){
-    .projetos.show{
-        height: 7400px;
-    }
-}
-
-@media (max-width: 460px){
-    .projetos.show{
-        height: 7400px;
-    }
-}
-
-@media (max-width: 430px){
-    .projetos.show{
-        height: 7600px;
-    }
-}
-
-@media (max-width: 408px){
-    .projetos.show{
-        height: 7700px;
-    }
-}
-
-@media (max-width: 396px){
-    .projetos.show{
-        height: 8000px;
     }
 }

@@ -128,9 +128,8 @@
 @media (max-height: 700px){
 
     .lobby{
-        height: auto;
+        min-height: 600px
     }
-
     .lobby-left{
         padding-top: 35px;
         padding-bottom: 35px;
