@@ -1,0 +1,95 @@
+.contatos{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contatos h1{
+    font-size: 40px;
+}
+
+.contatos .social{
+    display: flex;
+    gap: 35px;
+}
+
+.contatos .social img{
+    width: 50px;
+    transition: 1s;
+}
+
+.contatos .social img:hover{
+    transform: scale(160%);
+}
+
+.contatos .container{
+    display: flex; 
+    gap: 40px;
+}
+
+.contatos .container div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contatos .container h2{
+    font-size: 14px;
+}
+
+.contatos .container h3{
+    font-size: 20px;
+}
+
+.contatos .wpp{
+    height: 50px;
+
+}
+
+.whatsapp {
+    background-color: #199647;
+    color: #ffffff;
+    font-size: large;
+    font-size: 20px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 1s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.774);
+}
+
+.whatsapp:hover{
+    transform: scale(110%);
+}
+
+@media (max-width: 700px) {
+    .contatos .social{
+        display: none;
+    }
+    .contatos h1{
+        font-size: 30px;
+    }
+    .contatos .social{
+        gap: 25px;
+    }
+    .contatos .container h2{
+        font-size: 12px;
+    }
+    
+    .contatos .container h3{
+        font-size: 16px;
+    }
+
+    .whatsapp{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+}

@@ -76,3 +76,15 @@ function hideProjetos(projetos){
         projetosAtivados = false;
     }
 }
+
+
+
+/*botão de whatsApp*/
+
+document.getElementById("whatsapp").addEventListener("click", function() {
+    var numero = '5522992657128';
+    var mensagem = 'Escreva sua mensagem...';
+    var link = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(mensagem);
+
+    window.open(link, '_blank');
+});
