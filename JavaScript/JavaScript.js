@@ -82,7 +82,7 @@ function hideProjetos(projetos){
 /*botão de whatsApp*/
 
 document.getElementById("whatsapp").addEventListener("click", function() {
-    var numero = '5522992657128';
+    var numero = '5522992516350';
     var mensagem = 'Escreva sua mensagem...';
     var link = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(mensagem);
 
