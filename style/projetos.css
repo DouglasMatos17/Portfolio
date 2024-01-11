@@ -78,7 +78,7 @@
     align-items: center;
     gap: 40px;
     transform: translateX(2000px);
-    transition: transform 1s;
+    transition: all 1s;
 }
 
 .projetos .container-left.leftOn{
@@ -95,14 +95,65 @@
     height: 400px;
     position: relative;
     border-radius: 10px;
+
+    transition: all 1s;
 }
 
-.projetos .card img{
+/*.projetos .card img{
     height: 100%;
     width: 100%;
+    position: absolute;
     border-radius: 10px;
     box-shadow: 5px 5px 20px black;
+}*/
+
+.projetos .card .fundoprojeto{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    transition: all .8s;
 }
+
+.container-right:hover > .card > .fundoprojeto{
+    transform:  perspective(900px) translateY(-5%) rotateX(30deg) translateZ(0);
+    filter: blur(5px);
+}
+
+.projetos .card .notebook{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 40%;
+    opacity: 0%;
+    width: 300px;
+    transition: all .7s;
+}
+
+.projetos .card .celular{
+    display: flex;
+    position: absolute;
+    right: -50px;
+    top: 30%;
+    opacity: 0%;
+    width: 300px;
+    transition: all .7s;
+}
+
+.container-right:hover > .card > .celular{
+    opacity: 100%;
+    z-index: 2;
+    position: absolute;
+    transform: scale(150%) translateY(-90px);
+} 
+
+.container-right:hover > .card > .notebook{
+    z-index: 2;
+    opacity: 100%;
+    position: absolute;
+    transform: scale(250%) translateY(-80px);
+} 
 
 .projetos .resumo h1{
     margin-bottom: 15px;
