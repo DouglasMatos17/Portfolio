@@ -99,14 +99,6 @@
     transition: all 1s;
 }
 
-/*.projetos .card img{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px black;
-}*/
-
 .projetos .card .fundoprojeto{
     height: 100%;
     width: 100%;
