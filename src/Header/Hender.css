@@ -11,12 +11,13 @@
     box-shadow: 1px 1px 15px black;
     backdrop-filter: blur(20px);
 
-    font-size: 23px;
+    font-size: 1.1rem;
     font-weight: 700;
     z-index: 5;
 }
 
 .nav .logo{
+    font-size: 1.5rem;
     padding-left: 40px;
 }
 
@@ -30,7 +31,19 @@
 .nav li {
     position: relative;
     padding-bottom: 9px;
+
+    transition: all .7s;
 }
+
+.nav li:hover {
+    transform: scale(120%);
+
+    a{
+        color: #9973bd;
+    }
+    
+}
+
 
 .nav a::after{
     content: "";
@@ -52,37 +65,31 @@
 }
 
 
-
-
 .lobby-social-nav{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
-    bottom: 3vh;
-    right: 1vw;
+    bottom: 5vh;
+    right: 3vw;
 
     padding: 8px;
-    gap: 10px;
+    gap: 15px;
 
     background-color: rgba(240, 248, 255, 0.226);
     border-radius: 20px;
     box-shadow: 3px 3px 7px black;
     backdrop-filter: blur(2px);
     z-index: 1000;
-    transition: .7s;
+    transition: .6s;
 }
 .lobby-social-nav img{
-    width: 40px;
+    width: 35px;
 }
 
 .lobby-social-nav:hover{
-    transform: scale(120%);
-    bottom: 5vh;
-    right: 2vw;
-    background-color: #9d9b9e83;
-    box-shadow: 1px 1px 20px #7313ce;
+    transform: scale(115%);
 }
 
 
