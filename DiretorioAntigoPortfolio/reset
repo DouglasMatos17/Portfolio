@@ -1,0 +1,47 @@
+
+            <section className="home" id="home" >
+                <div className="home-left">
+                    <div className="msg">
+                        <h1>Olá,</h1>
+                        <h1>Meu nome é</h1>
+                        <h1 className="name" >Douglas Matos.</h1>
+                    </div>
+                    <div className="home-prof">
+                        <h2>Desenvolvedor Front-End</h2>
+                    </div>
+                </div>
+                <div className="home-right">
+                        <div className="home-card">
+                            <div className="home-perfil">
+                                <img src="Perfil.png" alt="Foto Douglas Matos"/>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section className="perfil" id="perfil">
+                <div className="perfil-left">
+                    <div className="perfil-left-nuvem">
+                    </div>
+                </div>
+                <div className="perfil-right">
+                    <div className="perfil-right-card">
+                        <h1>Desenvolvedor Front-End</h1>
+                        <h2>Sou um desenvolvedor Front-End com habilidades em</h2>
+                        <div className="perfil-skill"><h3>HTML5, CSS3, Java Script, React, Git e GitHub</h3></div>
+
+                        <p>Me chamo Douglas, estudante autodidata de HTML5 e CSS3, além de estar cursando Engenharia de Software. 
+                        Pratico diariamente, criando páginas e explorando recursos mais complexos como a linguagem de programação 
+                        JavaScript e animações em CSS3. Busco uma oportunidade de estágio para aprimorar minhas habilidades, 
+                        aprender mais e contribuir ativamente.</p>
+                        
+                        <p>Meu objetivo é aplicar meus conhecimentos, crescer profissionalmente e agregar valor à equipe e à empresa 
+                        que eu fizer parte. Agradeço a oportunidade e espero poder demonstrar minha dedicação.</p>
+
+                        <p>Baixe meu curriculo no botão abaixo!</p>
+                        <div>
+                            <a className="btn-curriculo" href="arquivos/Curriculo Douglas Matos.pdf" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section>

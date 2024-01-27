@@ -13,7 +13,7 @@ body{
     max-width: 1920px;
     margin: auto;
 
-    background-color: rgba(0, 0, 0, 0.918);
+    background-color: var(--cor-modoEscudo1);
 
     color: white;
     font-family:'Roboto', Arial, Helvetica, sans-serif;
@@ -24,11 +24,11 @@ a{
 }
 
 ::-webkit-scrollbar{
-    background: black;
+    background: var(--cor-modoEscudo1);
     width: 7px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #5a0ea1;
+    background-color: var(--cor-modoEscudo3);
     border-radius: 50px;
 }

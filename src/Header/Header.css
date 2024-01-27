@@ -1,29 +1,41 @@
-.nav{
-    display: flex;
+.header{
     position: fixed;
-    justify-content: space-between;
-    align-items: center;
+
     width: 100%;
+    min-width: 300px;
+    max-width: 1900px;
     height: 55px;
-    max-width: 1920px;
 
     background-color: rgba(0, 0, 0, 0.329);
     box-shadow: 1px 1px 15px black;
     backdrop-filter: blur(20px);
 
-    font-size: 1.1rem;
-    font-weight: 700;
-    z-index: 5;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    z-index: 10;
 }
 
 .nav .logo{
-    font-size: 1.5rem;
     padding-left: 40px;
+
+    font-size: 1.5rem;
 }
 
 
 .nav ul{
     display: flex;
+
     padding-right: 50px;
     gap: 45px;
 }
@@ -51,18 +63,53 @@
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 7px;
+    height: 3px;
     border-radius: 3px;
-    transition: .7s;
+    transition: .5s;
     
 
     background-color: #7313ce;
 }
 
 .nav li:hover a::after{
-    width: 130%;
+    width: 100%;
     
 }
+
+.btnDarkMode {
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+    transition:all 1s;
+}
+
+.btnDarkMode.light .circulo {
+    transform: translateX(-150%);
+    transition:all 1s;
+}
+
+.btnDarkMode .content {
+    display: flex;
+    margin: 0px 8px 0px 8px;
+    align-items: center;
+    justify-content: right;
+    width: 35px;
+    height: 15px;
+    border: solid 2px white;
+    border-radius: 30px;
+    background-color: black;
+    transition:all 1s;
+}
+
+.btnDarkMode .content .circulo {
+    margin: 1px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: white;
+    transition:all 1s;
+}
+
 
 
 .lobby-social-nav{
@@ -92,18 +139,20 @@
     transform: scale(115%);
 }
 
-
 @media (max-width: 850px){
-    .nav div{
-        display: none;
-    }
-
-    .nav{
-        justify-content: center;
-    }
-
     .nav ul{
-        padding-right: 0px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 300px;
+        right: 0;
+        top: 0px;
+        z-index: 0;
+        background-color: var(--cor-modoEscudo1);
+        box-shadow: 1px 1px 15px black;
+        padding: 0;
     }
 }
 
