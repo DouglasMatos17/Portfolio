@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'; // Importe PropTypes
+import PropTypes from 'prop-types';
 
-
-/*Importações de componentes*/
+/*Importações de style-components*/
 import { SectionHeader, Nav, BtnTema, ContentTema, CirculoTema } from './HeaderStyler';
 
-function Header({alterarDarkMode}) {
+function Header({toggleDarkMode}) {
 
     return (
         <>
@@ -18,7 +17,7 @@ function Header({alterarDarkMode}) {
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
-                <BtnTema onClick={alterarDarkMode}>
+                <BtnTema onClick={toggleDarkMode}>
                     <i className="fa-solid fa-sun"></i>
                     <ContentTema>
                         <CirculoTema></CirculoTema>
@@ -27,23 +26,12 @@ function Header({alterarDarkMode}) {
                 </BtnTema>
             </Nav>
         </SectionHeader>
-            <nav>
-                <div className="lobby-social-nav">
-                    <a href="https://github.com/DouglasMatos17" target="_blank" rel="noopener noreferrer">
-                        <img src="github.png" alt="Logo GitHub"/>
-                        </a>
-                    
-                    <a href="https://www.linkedin.com/in/douglasmatos17/" target="_blank" rel="noopener noreferrer">
-                        <img src="linkedin.png" alt="Logo Linkedin"/> 
-                        </a>
-                </div>
-            </nav>
-            </>
+        </>
     );
 }
 
 Header.propTypes = {
-    alterarDarkMode: PropTypes.func.isRequired,
+    toggleDarkMode: PropTypes.func.isRequired,
 };
 
 

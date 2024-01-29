@@ -1,20 +1,16 @@
-const tema = { 
-    darkModo: true,
-    
+const temacores = { 
     color: {
         dark: {
             prim:'#1c1620',
-            secun:'#000000',
+            secun:'#dbdbdb',
             terce: '#5f08b1',
         },
         light: {
             prim: '#dbdbdb',
-            secun: 'black',
+            secun: '#1c1620',
             terce: '#f5f5f5',
         }
     }
 }
 
-export default tema
-
-
+export default temacores

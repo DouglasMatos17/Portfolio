@@ -38,6 +38,27 @@ const Nav = styled.nav`
     
         padding-right: 50px;
         gap: 45px;
+
+        @media (max-width: 1000px){
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 300px;
+            right: 0;
+            top: 0px;
+            z-index: 0;
+            background-color: var(--cor-modoEscudo1);
+            box-shadow: 1px 1px 15px black;
+            padding: 0;
+        }
+        @media (max-width: 630px){
+            gap: 25px;
+        }
+        @media (max-width: 420px){
+            gap: 15px;
+        }
     }
     
     & li {
@@ -52,6 +73,13 @@ const Nav = styled.nav`
     
         a{
         color: #9973bd;
+
+        @media (max-width: 630px){
+            font-size: 18px;
+        }
+        @media (max-width: 420px){
+            font-size: 15px;
+        }
         }
     
     }
@@ -92,8 +120,8 @@ const ContentTema = styled.div`
     height: 15px;
     border: solid 2px white;
     border-radius: 30px;
-    background-color: black;
-    transition:all 1s;
+    background-color: ${(props) => props.theme.darkMode ? 'black' : 'white'};
+    transition:all .5s;
 `;
 
 const CirculoTema = styled.div`
@@ -101,8 +129,10 @@ const CirculoTema = styled.div`
     height: 13px;
     width: 13px;
     border-radius: 50%;
-    background-color: white;
-    transition:all 1s;
+    background-color: ${(props) => props.theme.darkMode ? 'white' : 'black'};;
+    transform: translateX(${(props)=>props.theme.darkMode?'-150%':'0%'});
+    transition:all .5s;
+
 `;
 
 export { SectionHeader, Nav, BtnTema, ContentTema, CirculoTema };
