@@ -27,6 +27,13 @@ const Nav = styled.nav`
     font-weight: 600;
     
     z-index: 10;
+
+    & div{
+        display: flex;
+    }
+
+
+    
     & h1{
         padding-left: 40px;
     
@@ -46,12 +53,14 @@ const Nav = styled.nav`
             align-items: center;
             height: 100vh;
             width: 300px;
-            right: 0;
-            top: 0px;
+            top: 55px;
+            right: -400px;
+            transform: ${(props)=> props.menu? 'translateX(-400px)' : 'translateX(0px)'};
             z-index: 0;
-            background-color: var(--cor-modoEscudo1);
+            background-color: #7313ce;
             box-shadow: 1px 1px 15px black;
             padding: 0;
+            transition: .5s;
         }
         @media (max-width: 630px){
             gap: 25px;
@@ -106,7 +115,7 @@ const Nav = styled.nav`
 
 const BtnTema = styled.div`
     display: flex;
-    margin-right: 70px;
+    margin-right: 35px;
     align-items: center;
     transition:all 1s;
 `;
@@ -130,9 +139,51 @@ const CirculoTema = styled.div`
     width: 13px;
     border-radius: 50%;
     background-color: ${(props) => props.theme.darkMode ? 'white' : 'black'};;
-    transform: translateX(${(props)=>props.theme.darkMode?'-150%':'0%'});
+    transform: translateX(${(props)=>props.theme.darkMode?'0%':'-150%'});
     transition:all .5s;
 
 `;
 
-export { SectionHeader, Nav, BtnTema, ContentTema, CirculoTema };
+const Button = styled.button`
+
+    display: none;
+    flex-direction: column;
+    width: 40px;
+    height: 35px;
+    margin-right: 20px;
+    background-color: #52525287;
+    border: 0px;
+    border-radius: 5px;
+    gap: 3px;
+    cursor: pointer;
+
+    & span {
+        display: flex;
+        width: 23px;
+        height: 3px;
+        background-color: white;
+        border-radius: 1px;
+        transition: all .5s;
+    }
+    
+    & .linha1{
+        transform: ${(props)=> props.menu? 'translateY(3px)rotate(-45deg)' : ''};
+    }
+
+    & .linha2{
+        display: ${(props)=> props.menu? 'none' : 'flex'};
+    }
+
+    & .linha3{
+        transform: ${(props)=> props.menu ? 'translateY(-3px)rotate(45deg)': '' };
+    }
+
+
+    @media (max-width: 1000px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export { SectionHeader, Nav, BtnTema, ContentTema, CirculoTema, Button };

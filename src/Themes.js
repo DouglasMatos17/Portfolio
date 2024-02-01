@@ -6,7 +6,7 @@ const temacores = {
             terce: '#5f08b1',
         },
         light: {
-            prim: '#dbdbdb',
+            prim: '#F3F2EF',
             secun: '#1c1620',
             terce: '#f5f5f5',
         }

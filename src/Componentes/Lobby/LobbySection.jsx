@@ -12,7 +12,9 @@ function LobbySection() {
                 </div>
             </LobbyLeft>
             <LobbyRight>
-                <img src="Perfil.png" alt="Foto Douglas Matos"/>
+                <div>
+                    <img src="Perfil.png" alt="Foto Douglas Matos"/>
+                </div>
             </LobbyRight>
         </Section>
         </>

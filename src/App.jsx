@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 //Imports de componentes React
-import Header from './Header/Header.jsx'
-import LobbySection from './Lobby/LobbySection.jsx'
+import Header from './Componentes/Header/Header.jsx'
+import LobbySection from './Componentes/Lobby/LobbySection.jsx'
 
 function App () {
     
