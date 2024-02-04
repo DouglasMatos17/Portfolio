@@ -14,8 +14,8 @@ function Header({toggleDarkMode}) {
 
     return (
         <>
-        <SectionHeader>
-            <Nav menu={menu}>
+        <SectionHeader >
+            <Nav $menu={menu}>
                 <h1>Douglas Matos</h1>
                 <ul>
                     <li><a href="#lobby">Inicio</a></li>
@@ -32,7 +32,7 @@ function Header({toggleDarkMode}) {
                         </ContentTema>
                         <i className="fa-solid fa-moon"></i>
                     </BtnTema>
-                    <Button onClick={toggleMenu} menu={menu}>
+                    <Button onClick={toggleMenu} $menu={menu}>
                         <span className='linha1'></span>
                         <span className='linha2'></span>
                         <span className='linha3'></span>

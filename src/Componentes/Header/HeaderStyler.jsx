@@ -55,7 +55,7 @@ const Nav = styled.nav`
             width: 300px;
             top: 55px;
             right: -400px;
-            transform: ${(props)=> props.menu? 'translateX(-400px)' : 'translateX(0px)'};
+            transform: ${(props)=> props.$menu? 'translateX(-400px)' : 'translateX(0px)'};
             z-index: 0;
             background-color: #7313ce;
             box-shadow: 1px 1px 15px black;
@@ -167,15 +167,15 @@ const Button = styled.button`
     }
     
     & .linha1{
-        transform: ${(props)=> props.menu? 'translateY(3px)rotate(-45deg)' : ''};
+        transform: ${(props)=> props.$menu? 'translateY(3px)rotate(-45deg)' : ''};
     }
 
     & .linha2{
-        display: ${(props)=> props.menu? 'none' : 'flex'};
+        display: ${(props)=> props.$menu? 'none' : 'flex'};
     }
 
     & .linha3{
-        transform: ${(props)=> props.menu ? 'translateY(-3px)rotate(45deg)': '' };
+        transform: ${(props)=> props.$menu ? 'translateY(-3px)rotate(45deg)': '' };
     }
 
 

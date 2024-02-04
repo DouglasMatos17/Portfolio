@@ -28,7 +28,7 @@ const LobbyLeft = styled.div`
     width: 35%;
     justify-content: center;
     align-items: center;
-    color: ${(props) => props.theme.temacores.color[props.theme.darkMode ? 'dark' : 'light'].secun};;
+    color: ${(props) => props.theme.temacores.color[props.theme.darkMode ? 'dark' : 'light'].secun};
 
     & p {
             font-size: 1.8rem;
@@ -71,14 +71,17 @@ const LobbyRight = styled.div`
     width: 35%;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     & div{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 430px;
+        position: absolute;
+        transform: translateY(60px);
+        width: 450px;
         min-width: 400px;
-        height: 450px;
+        height: 400px;
         border-radius: 40% 60% 28% 72% / 60% 60% 40% 40% ;
         box-shadow: 0px 0px 15px rgba(63, 6, 138, 0.911);
         background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
@@ -86,8 +89,10 @@ const LobbyRight = styled.div`
 
     & img{
         display: flex;
-        border-radius: 50%;
-        width: 330px;
+        border-radius: 40% 60% 28% 72% / 60% 60% 40% 40% ;
+        position: absolute;
+        width: 450px;
+        z-index: 1;
     }
 
     @media (max-width: 1000px){

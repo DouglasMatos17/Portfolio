@@ -13,8 +13,8 @@ function LobbySection() {
             </LobbyLeft>
             <LobbyRight>
                 <div>
-                    <img src="Perfil.png" alt="Foto Douglas Matos"/>
                 </div>
+                    <img src="Perfil.png" alt="Foto Douglas Matos"/>
             </LobbyRight>
         </Section>
         </>
