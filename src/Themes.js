@@ -1,14 +1,20 @@
 const temacores = { 
     color: {
         dark: {
-            prim:'#1c1620',
-            secun:'#dbdbdb',
-            terce: '#5f08b1',
+            colorFont: 'white',
+            prim:'#241438',
+            secun:'#5F08B1',
+            terci: '#B338CF',
+            quate:'#4453D4',
+            quina:'#7600CE',
         },
         light: {
-            prim: '#F3F2EF',
-            secun: '#1c1620',
-            terce: '#f5f5f5',
+            colorFont: 'black',
+            prim: '#f5f5f5',
+            secun: '#FAFAFA',
+            terce: '#4DE0F7',
+            quate:'#3163EB',
+            quina:'',
         }
     }
 }

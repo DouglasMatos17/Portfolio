@@ -7,7 +7,7 @@ function ProfileSection(){
 
     const conteudo = {
         hobby:{
-            titulo:'Hobbye',
+            titulo:'Hobby',
             content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste est, amet placeat delectus cupiditate mollitia, modi ipsam tempora ab earum aliquam? Possimus ipsam sunt impedit autem nulla praesentium aliquam.'
         },
         objetivos:{
@@ -24,9 +24,9 @@ function ProfileSection(){
     return(
         <>
         <Section ConteudoProps={conteudo}>
-            <Contest>
-                <button onClick={() => trocarConteudo('objetivos')}>Objetivos</button> 
-                <button onClick={() => trocarConteudo('hobby')}>Hobby</button> 
+            <Contest key={conteudoAtual}>
+                <button className='btnLeft' onClick={() => trocarConteudo('objetivos')}>Objetivos</button> 
+                <button className='btnRight' onClick={() => trocarConteudo('hobby')}>Hobby</button> 
                 <h2>{conteudo[conteudoAtual].titulo}</h2>
                 <p>{conteudo[conteudoAtual].content}</p>
             </Contest>
