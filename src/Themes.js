@@ -1,20 +1,22 @@
+/* Aqui vemos uma logica simples onde as cores em destaque são as ultamas pois estão presenttes em uma area menor do site*/
+
 const temacores = { 
     color: {
         dark: {
             colorFont: 'white',
-            prim:'#241438',
-            secun:'#5F08B1',
-            terci: '#B338CF',
+            prim:'#160C22',
+            secun:'#8B8C9A',
+            terci:'#6C0DC6',
             quate:'#4453D4',
-            quina:'#7600CE',
+            quina:'#B338CF',
         },
         light: {
             colorFont: 'black',
-            prim: '#f5f5f5',
-            secun: '#FAFAFA',
-            terce: '#4DE0F7',
-            quate:'#3163EB',
-            quina:'',
+            prim:'#F1F1F1',
+            secun:'#FAFAFA',
+            terci:'#3361E1',
+            quate:'#8517D8',
+            quina:'#4DE0F7',
         }
     }
 }

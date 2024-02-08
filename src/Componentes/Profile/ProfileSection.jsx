@@ -8,11 +8,11 @@ function ProfileSection(){
     const conteudo = {
         hobby:{
             titulo:'Hobby',
-            content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste est, amet placeat delectus cupiditate mollitia, modi ipsam tempora ab earum aliquam? Possimus ipsam sunt impedit autem nulla praesentium aliquam.'
+            content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste est, amet placeat delectus cupiditate mollitia, modi ipsam tempora ab earum aliquam? Possimus ipsamin architecto, debitis obcaecati magnam quas dolore vitae dolores labore culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, nostrum assumenda explicabo animi corporis, error modi neque quae enim, reiciendis vel doloribus fugit iste non aspernatur tempora fuga eum sint. Dolores ipsam veritatis aliquam molestias cumque eveniet nisi soluta consequuntur laborum maiores! Blanditiis nam unde laborum aperiam,in architecto, debitis obcaecati magnam quas dolore vitae dolores labore culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, nostrum assumenda explicabo animi corporis, error modi neque quae enim, reiciendis vel doloribus fugit iste non aspernatur tempora fuga eum sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, est quo? Natus eaque ipsum quibusdam labore odio exercitationem in expedita delectus quo. Similique repudiandae, vero autem accusantium ea eveniet quod!'
         },
         objetivos:{
             titulo:'Objetivos',
-            content: 'Lorem 2 ipsum dolor sit amet consectetur, adipisicing elit. Adipisci accusantium aut nulla modi repudiandae doloremque laborum quis saepe ratione, in architecto, debitis obcaecati magnam quas dolore vitae dolores labore culpa!'
+            content: 'Me chamo Douglas, estudante autodidata de HTML5 e CSS3, além de estar cursando Engenharia de Software. Pratico diariamente, criando páginas e explorando recursos mais complexos como a linguagem de programação JavaScript e animações em CSS3. Busco uma oportunidade de estágio para aprimorar minhas habilidades, aprender mais e contribuir ativamente. Meu objetivo é aplicar meus conhecimentos, crescer profissionalmente e agregar valor à equipe e à empresa que eu fizer parte. Agradeço a oportunidade e espero poder demonstrar minha dedicação.'
         }
     }
 
@@ -23,7 +23,7 @@ function ProfileSection(){
 
     return(
         <>
-        <Section ConteudoProps={conteudo}>
+        <Section $ConteudoProps={conteudo}>
             <Contest key={conteudoAtual}>
                 <button className='btnLeft' onClick={() => trocarConteudo('objetivos')}>Objetivos</button> 
                 <button className='btnRight' onClick={() => trocarConteudo('hobby')}>Hobby</button> 
@@ -31,9 +31,9 @@ function ProfileSection(){
                 <p>{conteudo[conteudoAtual].content}</p>
             </Contest>
             <Profile>
-                <image>
+                <aside>
                     <img src="Perfil.png" alt="Foto de Perfil" />
-                </image>
+                </aside>
                 <h2>Desenvolvedor Front-End</h2>
                 <p>Desenvolvedor Web</p>
                 <div>

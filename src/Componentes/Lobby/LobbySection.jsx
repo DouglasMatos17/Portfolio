@@ -1,21 +1,17 @@
-import {Section, LobbyLeft, LobbyRight} from './LobbySectionStyler'
+import {Section} from './LobbySectionStyler'
 
 function LobbySection() {
 
     return(
         <>
         <Section>
-            <LobbyLeft>
+            <section>
                 <div>
                     <p>Olá,<br/> Meu nome é</p>
                     <h1>Douglas Matos.</h1>
+                    <p className='titulo'>Desenvolvedor Front-End</p>
                 </div>
-            </LobbyLeft>
-            <LobbyRight>
-                <div>
-                </div>
-                    <img src="Perfil.png" alt="Foto Douglas Matos"/>
-            </LobbyRight>
+            </section>
         </Section>
         </>
     )

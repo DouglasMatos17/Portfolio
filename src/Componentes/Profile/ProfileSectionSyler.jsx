@@ -13,9 +13,10 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     min-height: 800px;
-    gap: 80px;
+    gap: 100px;
+    color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark' : 'light'].colorFont};
     background-color: ${(props) => props.theme.temacores.color[props.theme.darkMode ? 'dark' : 'light'].prim};
     transition: all .2s;
 `;
@@ -23,25 +24,23 @@ const Section = styled.section`
 const Contest = styled.article`
     width: 500px;
     height: 70%;
-    color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark' : 'light'].colorFont};
-    background-color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark': 'light'].secun};
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.400);
 
     & button{
-        background-color: rgb(0, 0, 0, 0.300);
+        background-color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark': 'light'].quate};
         border: none;
         width: 50%;
-        color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark' : 'light'].colorFont};
+        color: ${(props)=> props.theme.temacores.color.dark.colorFont};
         height: 10%;
         cursor: pointer;
         font-size: 1.4rem;
         font-weight: 600;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.300);
         transition: all .4s;
         
     }
     & .btnLeft{
-        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     & .btnRight{
@@ -49,7 +48,8 @@ const Contest = styled.article`
     }
 
     & button:hover{
-        background-color: rgba(128, 128, 128, 0.100);
+        background-color: rgba(128, 128, 128, 0.200);
+        color: ${(props)=> props.theme.temacores.color[props.theme.darkMode? 'dark': 'light'].colorFont};
     }
 
     & h2{
@@ -73,23 +73,44 @@ const Profile = styled.div`
     justify-content: center;
     width: 500px;
     height: 70%;
-    background-color: rgba(0, 0, 0, 0.500);
     border-radius: 15px;
-    gap: 20px;
+    gap: 30px;
 
-    & image img{
-        width: 250px;
-        border-radius: 50%;
+    
+    & aside{
+        display: flex;
+        flex-direction: column;
+        width: 350;
+        height: 350;
+        border-radius: 40% 60% 28% 72% / 60% 60% 40% 40% ;
+        box-shadow: 0px 0px 15px rgba(63, 6, 138, 0.911);
+        background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+    }
+    
+    & aside img{
+        width: 450px;
+        border-radius: 40% 60% 28% 72% / 60% 60% 40% 40%;
+    }
+    
+    & h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    & p{
+        font-size: 1.1rem;
+        font-weight: 400;
     }
 
-    & div img{
+    & div a img{
         width: 30px;
         background-color: rgba(128, 128, 128, 0.500);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.300);
         padding: 15px;
-        border-radius: 8px;
+        border-radius: 13px;
         margin: 10px;
         cursor: pointer;
     }
-`;
+    `;
 
 export {Section, Contest, Profile}
