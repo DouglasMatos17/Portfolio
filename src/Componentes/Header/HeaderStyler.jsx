@@ -8,7 +8,7 @@ const SectionHeader  = styled.header`
     box-shadow: 1px 1px 15px black;
     backdrop-filter: blur(20px);
     z-index: 10;
-    `;
+`;
 
 
 const Nav = styled.nav`
@@ -35,40 +35,43 @@ const Nav = styled.nav`
             right: -400px;
             transform: ${(props)=> props.$menu? 'translateX(-400px)' : 'translateX(0px)'};
             z-index: 0;
-            background-color: #3b056de6;
+            background-color: rgba(0, 0, 0, 0.850);
             box-shadow: 1px 1px 15px black;
             transition: .5s;
         }
     }
     
-    & li {
+    & ul li {
         display: flex;
         position: relative;
         height: 100%;
         align-items: center;
         transition: all .7s;
+        @media (max-width: 1000px){
+            height: 60px;
+        }
     }
-    & a{
+    & ul li:hover {
+        background-color: #7413cea4;
+        transition: all .5s;
+        @media (max-width: 1000px){
+            background-color: transparent;
+        }
+    }    
+    & ul li a{
         display: flex;
         align-items: center;
         height: 100%;
         padding-left: 15px;
         padding-right: 15px;
-    }
-    & li:hover {
-        a{
-            background-color: #7413ce1f;
-            transition: all .5s;
-            @media (max-width: 630px){
-                font-size: 18px;
-            }
-            @media (max-width: 420px){
-                font-size: 15px;
-            }
+        @media (max-width: 630px){
+            font-size: 18px;
         }
-        
-    }    
-    & a::after{
+        @media (max-width: 420px){
+            font-size: 15px;
+        }
+    }
+    & ul li a::after{
         content: "";
         position: absolute;
         bottom: 0;
@@ -79,15 +82,18 @@ const Nav = styled.nav`
         transition: .5s;        
         background-color: #7313ce;
     }
-    & li:hover a::after{
+    & ul li:hover a::after{
         width: 100%;
+        @media (max-width: 1000px){
+           width: 0;
+        }
         
     }
     & img{
         width: 45px;
         margin-left: 45px;
     }
-    `;
+`;
 
 const Logo = styled.image`
     width: 45px;
@@ -105,14 +111,20 @@ const Wrapper = styled.div`
     display: flex;
     position: absolute;
     top: center;
-    right: 3%;
+    right: 5%;
     gap: 10px;
     & nav{
         display: flex;
         justify-content: center;
         margin-right: 30px;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+        @media (max-width: 500px){
+            margin-right: 10px;
+        }
+    }
+    & nav a {
+        padding: 10px;
     }
 `;
 
