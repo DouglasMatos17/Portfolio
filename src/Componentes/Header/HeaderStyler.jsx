@@ -142,7 +142,7 @@ const BtnTema = styled.div`
         align-items: center;
         justify-content: right;
         width: 35px;
-        height: 15px;
+        height: 16px;
         border: solid 2px white;
         border-radius: 30px;
         background-color: ${(props) => props.theme.darkMode ? 'black' : 'white'};
@@ -150,11 +150,11 @@ const BtnTema = styled.div`
     }
     & span{
         margin: 1px;
-        height: 13px;
-        width: 13px;
+        height: 10px;
+        width: 10px;
         border-radius: 50%;
         background-color: ${(props) => props.theme.darkMode ? 'white' : 'black'};
-        transform: translateX(${(props)=>props.theme.darkMode?'0%':'-150%'});
+        transform: translateX(${(props)=>props.theme.darkMode?'0%':'-190%'});
         transition:all .5s;
     }
 `;
