@@ -121,6 +121,7 @@ const Wrapper = styled.div`
         gap: 15px;
         @media (max-width: 500px){
             margin-right: 10px;
+            gap: 0;
         }
     }
     & nav a {

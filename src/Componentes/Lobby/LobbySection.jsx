@@ -6,10 +6,12 @@ function LobbySection() {
         <>
         <Section>
             <section>
-                <div>
+                <div className='divConteudo'>
                     <p>Olá,<br/> Meu nome é</p>
                     <h1>Douglas Matos.</h1>
-                    <p className='titulo'>Desenvolvedor Front-End</p>
+                        <div className='divTitulo'>
+                            <p className='titulo'>Desenvolvedor Front-End</p>
+                        </div>
                 </div>
             </section>
         </Section>
