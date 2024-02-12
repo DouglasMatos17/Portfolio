@@ -45,14 +45,14 @@ const Section = styled.section`
     & h1{
         font-size: 5rem;
         font-weight: 700;
-        background-image: linear-gradient(-45deg, #4f41d4 0%, #f325a1 100%);
+        background-image: linear-gradient(-45deg, #4f41d4 0%, #e100ff 100%);
         background-clip: text; //Deixa o background apenas no fundo das letras
         -webkit-background-clip: text; //Compatibidade a versoes antigas de navegadores
         color: transparent; //Necessário para que o Background fique visivel
     }
 
     & .titulo{
-            background-image: linear-gradient(-45deg, #4f41d4 0%, #f325a1 100%);
+            background-image: linear-gradient(-45deg, #4f41d4 0%, #cc00ff 100%);
             border-radius: 15px;
             padding: 10px 25px;
     }

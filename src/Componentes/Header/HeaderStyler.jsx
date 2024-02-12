@@ -95,15 +95,14 @@ const Nav = styled.nav`
     }
 `;
 
-const Logo = styled.image`
+const Logo = styled.div`
+    display: flex;
     width: 45px;
     height: 45px;
     background-image: url(${(props)=>props.theme.darkMode? 'logoDark.png' : 'logoLight.png'});
     background-position: center;
     background-size: cover;
-    border: none;
     position: absolute;
-    top: center;
     left: 3%;
 `;
 
