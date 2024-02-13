@@ -38,9 +38,10 @@ const Section = styled.section`
     }
 
     & p {
-            font-size: 2.1rem;
-            font-weight: 700;  
-        }
+        font-size: 2.1rem;
+        font-weight: 700;
+        color: ${(props)=>props.theme.darkMode ? props.theme.temacores.color.dark.colorFont: props.theme.temacores.color.light.colorFont};
+    }
 
     & h1{
         font-size: 5rem;
@@ -54,7 +55,8 @@ const Section = styled.section`
     & .titulo{
             background-image: linear-gradient(-45deg, #4f41d4 0%, #cc00ff 100%);
             border-radius: 15px;
-            padding: 10px 25px;
+            padding: 10px 15px;
+            color: white;
     }
 
     @media (max-width: 1000px){
