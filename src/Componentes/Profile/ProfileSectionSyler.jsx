@@ -16,8 +16,8 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw - 7px);
-    min-height: 95vh;
+    width: 100%;
+    min-height: 1000px;
     padding: 15px;
 
     //Alterações de thema
@@ -30,11 +30,13 @@ const Section = styled.section`
 const Content = styled.section`
     display: flex;
     justify-content: center;
+
     width: 100%;
     gap: 50px;
 
     @media (max-width: 950px) {
         flex-direction: column-reverse;
+        align-items: center;
         height: auto;
 }`;
 

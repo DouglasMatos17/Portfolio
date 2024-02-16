@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import Header from './Componentes/Header/Header.jsx'
 import LobbySection from './Componentes/Lobby/LobbySection.jsx'
 import ProfileSection from './Componentes/Profile/ProfileSection.jsx';
+import { ProjectsSection } from './Componentes/Projects/ProjectsSection.jsx';
 
 function App () {
     
@@ -21,6 +22,7 @@ function App () {
             <Header toggleDarkMode={toggleDarkMode}/>
             <LobbySection/>
             <ProfileSection/>
+            <ProjectsSection/>
         </ThemeProvider>
         </>
     )
