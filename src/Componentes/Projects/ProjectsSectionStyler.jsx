@@ -23,7 +23,7 @@ const SectionWrapper = styled.section`
     transition: background-color .3s, color .5s;
 `;
 
-const ContentTop = styled.article`
+const TopContainer = styled.article`
     display: flex;
     flex-direction: column;
     background-color: ${(props)=>props.theme.darkMode?props.theme.temacores.color.dark.secun:props.theme.temacores.color.light.secun};
@@ -70,8 +70,4 @@ const Button = styled.button`
 }   
 `;
 
-const ContentBotton = styled.section`
-
-`;
-
-export {SectionWrapper, ContentTop, Title, DivResume, ContentBotton, Button}
+export {SectionWrapper, TopContainer, Title, DivResume, Button}

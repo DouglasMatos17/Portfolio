@@ -1,10 +1,10 @@
-import { SectionWrapper, ContentTop, Title, DivResume, ContentBotton, Button} from "./ProjectsSectionStyler";
+import { SectionWrapper, TopContainer, Title, DivResume, Button} from "./ProjectsSectionStyler";
 
 export function ProjectsSection(){
     return(
         <>
         <SectionWrapper>
-            <ContentTop>
+            <TopContainer>
                 <Title>
                     Projetos
                 </Title>
@@ -18,10 +18,7 @@ export function ProjectsSection(){
                 <Button> 
                     Ver projetos 
                 </Button>
-            </ContentTop>
-            <ContentBotton>
-
-            </ContentBotton>
+            </TopContainer>
         </SectionWrapper>
         </>
     )
