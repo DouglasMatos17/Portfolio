@@ -5,7 +5,7 @@ const temacores = {
         dark: {
             colorFont: 'white',
             prim:'#160C22',
-            secun:'#8B8C9A',
+            secun:'#200E3D',
             terci:'#6C0DC6',
             quate:'#4453D4',
             quina:'#B338CF',

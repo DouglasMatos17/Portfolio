@@ -4,11 +4,11 @@ const waveAnimation = keyframes`
     0% {
         transform: perspective(500px) rotateY(0deg);
     }
-    33.3% {
-        transform: perspective(500px) rotateY(-5deg);
+    33% {
+        transform: perspective(500px) rotateY(-7deg);
     }
-    33.3% {
-        transform: perspective(500px) rotateY(5deg);
+    66% {
+        transform: perspective(500px) rotateY(7deg);
     }
     100% {
         transform: perspective(500px) rotateY(0deg);
@@ -26,9 +26,12 @@ const SectionWrapper = styled.section`
 const ContentTop = styled.article`
     display: flex;
     flex-direction: column;
+    background-color: ${(props)=>props.theme.darkMode?props.theme.temacores.color.dark.secun:props.theme.temacores.color.light.secun};
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.200);
     align-items: center;
     min-height: 500px;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 15px;
     margin: 40px 20px;
     color: ${(props)=> props.theme.darkMode ? props.theme.temacores.color.dark.colorFont : props.theme.temacores.color.light.colorFont};
@@ -60,10 +63,10 @@ const Button = styled.button`
     margin: 35px;
     color: ${(props)=>props.theme.temacores.color.dark.colorFont};
     cursor: pointer;
-    transition: transform 1.5s ease;
+    transition: transform 1.5s linear;
 
     &:hover {
-        animation: ${waveAnimation} 1.5s ease infinite;
+        animation: ${waveAnimation} 1.5s linear infinite;
 }   
 `;
 

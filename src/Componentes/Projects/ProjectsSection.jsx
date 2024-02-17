@@ -15,7 +15,9 @@ export function ProjectsSection(){
 
                 Se desejar, fique à vontade para explorar os projetos que venho desenvolvendo.
                 </DivResume>
-                <Button> Ver projetos </Button>
+                <Button> 
+                    Ver projetos 
+                </Button>
             </ContentTop>
             <ContentBotton>
 
