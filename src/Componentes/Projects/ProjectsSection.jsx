@@ -1,4 +1,5 @@
 import { SectionWrapper, TopContainer, Title, DivResume, Button, BotContainer } from "./ProjectsSectionStyler";
+import { DivProject } from "./DivProject/DivProject"
 
 export function ProjectsSection(){
     return(
@@ -22,7 +23,9 @@ export function ProjectsSection(){
             </TopContainer>
 
             <BotContainer>
-                
+
+                <DivProject/>
+
             </BotContainer>
 
         </SectionWrapper>

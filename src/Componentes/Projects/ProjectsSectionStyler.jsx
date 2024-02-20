@@ -71,10 +71,15 @@ const Button = styled.button`
 }   
 `;
 
-const BotContainer = styled.section` //Modificar dimenções depois para acompanhar (W H) a responsividade 
+const BotContainer = styled.section` //Modificar dimenções depois para acompanhar (W H) a responsividade,  propsiedades apenas de testes!!
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 0px 100px 0px;
     min-height: 500px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: ${(props)=>props.theme.darkMode ? props.theme.temacores.color.dark.prim : props.theme.temacores.color.light.prim};
 `;
 
 export {SectionWrapper, TopContainer, Title, DivResume, Button, BotContainer}
