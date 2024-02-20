@@ -17,6 +17,7 @@ const waveAnimation = keyframes`
 
 const SectionWrapper = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: ${(props)=> props.theme.darkMode ? props.theme.temacores.color.dark.prim : props.theme.temacores.color.light.prim};
@@ -70,4 +71,10 @@ const Button = styled.button`
 }   
 `;
 
-export {SectionWrapper, TopContainer, Title, DivResume, Button}
+const BotContainer = styled.section` //Modificar dimenções depois para acompanhar (W H) a responsividade 
+    min-height: 500px;
+    width: 100%;
+    background-color: aquamarine;
+`;
+
+export {SectionWrapper, TopContainer, Title, DivResume, Button, BotContainer}
