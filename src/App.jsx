@@ -1,4 +1,5 @@
-import temacores from './Themes.js'
+import { temacores } from './Themes.js'
+import { projects } from './BancoDeDados.js'
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
@@ -18,7 +19,7 @@ function App () {
 
     return(
         <>
-        <ThemeProvider theme={{temacores , darkMode}}>
+        <ThemeProvider theme={{temacores , darkMode}} bancoDeDados={ projects }>
             <Header toggleDarkMode={toggleDarkMode}/>
             <LobbySection/>
             <ProfileSection/>

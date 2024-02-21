@@ -1,6 +1,6 @@
 /* Aqui vemos uma logica simples onde as cores em destaque são as ultamas pois estão presenttes em uma area menor do site*/
 
-const temacores = { 
+export const temacores = { 
     color: {
         dark: {
             colorFont: 'white',
@@ -21,4 +21,3 @@ const temacores = {
     }
 }
 
-export default temacores
