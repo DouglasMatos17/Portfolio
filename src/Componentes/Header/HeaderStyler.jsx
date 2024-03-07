@@ -4,7 +4,7 @@ const SectionHeader  = styled.header`
     position: fixed;
     width: 100vw;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.329);
+    background-color: rgba(0, 0, 0, 0.200);
     box-shadow: 1px 1px 15px black;
     backdrop-filter: blur(20px);
     z-index: 10;

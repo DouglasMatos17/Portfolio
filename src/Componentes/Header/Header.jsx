@@ -13,8 +13,8 @@ function Header({toggleDarkMode}) {
     }
     return (
         <>
-        <SectionHeader >
-            <Nav $menu={menu}> 
+        <SectionHeader>
+            <Nav $menu={menu}>
                 <Logo/>
                 <ul>
                     <li><a href="#lobby">Inicio</a></li>

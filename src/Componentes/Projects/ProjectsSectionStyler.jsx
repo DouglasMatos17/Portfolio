@@ -75,6 +75,7 @@ const BotContainer = styled.section` //Modificar dimenções depois para acompan
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     padding: 100px 0px 100px 0px;
     min-height: 500px;

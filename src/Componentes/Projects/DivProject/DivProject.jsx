@@ -1,46 +1,50 @@
+/* eslint-disable react/prop-types */
+
+
 import { ContainerWrapper, ImageDiv, ContentDiv, Title, Resume, TechnologyDiv } from "./DivProjectStyler"; //Nome do componente sem plural, pois referece a div de um projeto apenas
 
-export function DivProject() {
+
+export function DivProject({ project }) {
+
+    const iconMap = {
+        react: 'react',
+        html: 'html5',
+        css: 'css3-alt',
+        js: 'square-js'
+    };
 
     return(
         <>
         <ContainerWrapper>
             <ImageDiv>
                 <div className="noteDiv">
-                    <img src='./src/assets/Elementos/note-relogio.png' alt="" />
+                    <img src={project.imgNote} alt="" />
                 </div>
 
                 <div className="celDiv">
-                    <img src='./src/assets/Elementos/cel-relogio.png' alt="" />
+                    <img src={project.imgCel} alt="" />
                 </div>
                
             </ImageDiv>
 
             <ContentDiv>
                 <Title>
-                    Titulo Do Projeto
+                    {project.title}
                 </Title>
                 
                 <Resume>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, porro iste assumenda qui maiores officiis dolore impedit molestiae odio ut numquam libero! Iure optio laborum molestias accusantium eveniet vero laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui veniam fugit iure dicta. Praesentium inventore id, doloribus aliquam facere quasi molestiae eum accusantium ea iste earum eaque alias ipsa debitis.
+                    {project.resume}
                 </Resume>
 
                 <TechnologyDiv>
-                    <span>
-                        <i className="fa-brands fa-react fa-2x"></i>React
-                    </span>
                     
-                    <span>
-                        <i className="fa-brands fa-html5 fa-2x"></i>React
-                    </span>
-                    
-                    <span>
-                        <i className="fa-brands fa-css3-alt fa-2x"></i>React
-                    </span>
-                    
-                    <span>
-                        <i className="fa-brands fa-square-js fa-2x"></i>React
-                    </span>
+                    {Object.keys(project.tech).map((tech, index) => (
+                        project.tech[tech] && (
+                            <span key={index}>
+                                <i className={`fa-brands fa-${iconMap[tech]} fa-2x`}></i>{tech}
+                            </span>
+                        )
+                    ))}
                     
                 </TechnologyDiv>
             </ContentDiv>

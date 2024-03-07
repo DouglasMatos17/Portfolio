@@ -1,5 +1,6 @@
 import { SectionWrapper, TopContainer, Title, DivResume, Button, BotContainer } from "./ProjectsSectionStyler";
 import { DivProject } from "./DivProject/DivProject"
+import { projects } from "../../BancoDeDados"
 
 export function ProjectsSection(){
     return(
@@ -24,8 +25,10 @@ export function ProjectsSection(){
 
             <BotContainer>
 
-                <DivProject/>
-
+                {Object.values(projects).map((project, index) => (
+                    <DivProject key={index} project={project}/>
+                ))}
+                
             </BotContainer>
 
         </SectionWrapper>
