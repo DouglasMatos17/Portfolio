@@ -38,7 +38,7 @@ export const projects = {
     projeto4: {
         title: 'Projeto 4',
         resume: 'Este é o Projeto 4. Adicione aqui uma breve descrição sobre o projeto.o horário e alterar dinamicamente o conteúdo exibido com base no momento em que o usuário acessa o site. Além disso, adicionei uma funcionalidade que atualiza o conteúdo do relógio a cada segundo, proporcionando uma experiência ainda mais interativa aos visitantes. Esse projeto me permitiu aplicar o que aprendi de forma prática, tornando-o mais cativante e funcional.',
-        imgNote: './src/assets/Elementos/note-mm.png',
+        imgNote: './src/assets/Elementos/note-mm.pn',
         imgCel: './src/assets/Elementos/cel-mm.png',
         tech:{
             html: true,
