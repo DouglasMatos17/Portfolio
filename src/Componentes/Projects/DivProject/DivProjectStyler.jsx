@@ -18,7 +18,7 @@ export const ImageDiv = styled.div`
     position: relative;
     width: 50%;
     border-radius: 10px 0px 0px 10px;
-    background-image: url(./pngw.png);
+    background-image: url(image/fundo/fundo-projetos.png);
     background-repeat: no-repeat;
     background-position-x: -250px;
     background-position-y: -150px;

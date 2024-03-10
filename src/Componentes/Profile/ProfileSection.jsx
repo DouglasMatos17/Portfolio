@@ -41,15 +41,15 @@ function ProfileSection(){
                 
                 <Profile>
                     <div className='divPerfil'>
-                        <img src="Perfil.png" alt="Foto de Perfil" />
+                        <img src="image/elements/perfil.png" alt="Foto de Perfil" />
                     </div>
                     <div className='divTitulo'>
                         <h2>Desenvolvedor Front-End</h2>
                         <p className='tituloP'>Desenvolvedor Web</p>
                     </div>
                     <div className='divSocial'>
-                        <a><img src="github.png" alt="Logo GitHub"/></a>
-                        <a><img src="linkedin.png" alt="Logo Linkedin"/></a>
+                        <a><img src="image/elements/github.png" alt="Logo GitHub"/></a>
+                        <a><img src="image/elements/linkedin.png" alt="Logo Linkedin"/></a>
                     </div>
                 </Profile>
             </Content>

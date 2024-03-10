@@ -6,7 +6,7 @@ const Section = styled.section`
     max-height: 1080px;
     min-height: 600px;
     align-items: center;
-    background-image: ${(props)=> props.theme.darkMode? 'url(/HomeBG.jpg)' : 'url(/HomeBGLight.jpg)'};
+    background-image: url(${(props)=> props.theme.darkMode? 'image/fundo/homeBG.jpg' : 'image/fundo/homeBGLight.jpg'});
     background-size: cover;
     background-position: center;
     transition: all .2s; //Para animação de tema DarkMode

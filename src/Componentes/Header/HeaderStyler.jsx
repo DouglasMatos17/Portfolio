@@ -99,7 +99,7 @@ const Logo = styled.div`
     display: flex;
     width: 45px;
     height: 45px;
-    background-image: url(${(props)=>props.theme.darkMode? 'logoDark.png' : 'logoLight.png'});
+    background-image: url(${(props)=>props.theme.darkMode? 'image/elements/logoDark.png' : 'image/elements/logoLight.png'});
     background-position: center;
     background-size: cover;
     position: absolute;
