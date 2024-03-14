@@ -24,7 +24,6 @@ export function DivProject({ project }) {
                 <div className="celDiv">
                     <img src={project.imgCel} alt="" />
                 </div>
-               
             </ImageDiv>
 
             <ContentDiv>

@@ -1,5 +1,3 @@
-// ContainerWrapper, Content, ImageDiv, ContentDiv, Title, Resume, TechnologyDiv
-
 import styled from "styled-components";
 
 export const ContainerWrapper = styled.article`
@@ -12,6 +10,12 @@ export const ContainerWrapper = styled.article`
     color: ${(props)=>props.theme.darkMode? props.theme.temacores.color.dark.colorFont:props.theme.temacores.color.light.colorFont};
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.200);
     transition: color .5s;
+
+    @media (max-width: 900px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const ImageDiv = styled.div`
@@ -25,31 +29,54 @@ export const ImageDiv = styled.div`
     background-size: 170%;
     & .noteDiv{
         position: absolute;
+        width: 100%;
         top: 50%;
-        right: 45%;
+        right: 40%;
         transform: translate(50%, -50%);
 
         img{
-            width: 450px;
+            width: 90%;
+            transition: all 1s;
+        }
+        img:hover{
+            transform: scale(125%);
         }
     }
 
     & .celDiv{
         position: absolute;
+        width: 16%;
         top: 60%;
-        left: 15%;
+        left: 25%;
         transform: translate(-50%, -50%);
 
         img{
-            width: 110px;
+            width: 100%;
+            transition: all 1s;
+        }
+        img:hover{
+            transform: scale(135%);
         }
     }
+    
+    @media (max-width: 900px){
+        width: 100%;
+        min-height: 300px;
+        & .celDiv, .noteDiv{
+            max-width: 550px;
+        }
+    }
+
 `;
 
 export const ContentDiv = styled.div`
     width: 50%;
     padding: 0px 25px 0px 25px;
 
+    @media (max-width: 900px){
+        width: 100%;
+        padding: 0px 40px 25px 40px;
+    }
 `;
 
 
