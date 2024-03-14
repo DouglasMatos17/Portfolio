@@ -31,7 +31,7 @@ const Nav = styled.nav`
             align-items: center;
             height: 100vh;
             width: 300px;
-            top: 55px;
+            top: 60px;
             right: -400px;
             transform: ${(props)=> props.$menu? 'translateX(-400px)' : 'translateX(0px)'};
             z-index: 0;

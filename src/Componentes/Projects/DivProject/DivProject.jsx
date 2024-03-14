@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-import { ContainerWrapper, ImageDiv, ContentDiv, Title, Resume, TechnologyDiv } from "./DivProjectStyler"; //Nome do componente sem plural, pois referece a div de um projeto apenas
+import { ContainerWrapper, ImageDiv, ContentDiv, Title, Resume, TechnologyDiv, Buttons } from "./DivProjectStyler"; //Nome do componente sem plural, pois referece a div de um projeto apenas
 
 
 export function DivProject({ project }) {
@@ -46,6 +46,11 @@ export function DivProject({ project }) {
                     ))}
                     
                 </TechnologyDiv>
+
+                <Buttons>
+                    <button className="btnProject btnProject-GitHub">Ver GitHub</button>
+                    <button className="btnProject btnProject-Site">Ver Site</button>
+                </Buttons>
             </ContentDiv>
 
         </ContainerWrapper>
