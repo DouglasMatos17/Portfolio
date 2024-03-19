@@ -16,8 +16,7 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 1000px;
+    min-height: 800px;
     padding: 15px;
 
     //Alterações de thema
@@ -31,7 +30,6 @@ const Content = styled.section`
     display: flex;
     justify-content: center;
 
-    width: 100%;
     gap: 50px;
 
     @media (max-width: 950px) {

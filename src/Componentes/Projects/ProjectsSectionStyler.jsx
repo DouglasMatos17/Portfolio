@@ -31,7 +31,7 @@ const TopContainer = styled.article`
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.200);
     align-items: center;
-    min-height: 500px;
+    min-height: 300px;
     max-width: 1200px;
     padding: 15px;
     margin: 40px 20px;
@@ -42,12 +42,14 @@ const TopContainer = styled.article`
 const Title = styled.h1`
     font-size: 2rem;
     font-weight: 700;
-    padding: 25px;
+    margin: 15px;
+    margin-top: 20px;
 
 `;
 
 const DivResume = styled.p`
-    padding: 15px;
+    margin: 20px;
+    margin-inline: 35px;
 `;
 
 const Button = styled.button`
@@ -77,7 +79,7 @@ const BotContainer = styled.section` //Modificar dimenções depois para acompan
     justify-content: center;
     flex-direction: column;
 
-    padding: 100px 0px 100px 0px;
+    padding: 50px 0px 50px 0px;
     min-height: 500px;
     width: 100%;
     background-color: ${(props)=>props.theme.darkMode ? props.theme.temacores.color.dark.prim : props.theme.temacores.color.light.prim};
