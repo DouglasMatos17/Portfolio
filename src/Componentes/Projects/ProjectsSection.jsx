@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import { SectionWrapper, TopContainer, Title, DivResume, Button, BotContainer } from "./ProjectsSectionStyler";
 import { DivProject } from "./DivProject/DivProject"
 import { projects } from "../../BancoDeDados"
 
 export function ProjectsSection(){
+    
+    const [projectActive, setProjectActive] = useState(false);
+
+    const handleClick = () => {
+            setProjectActive(projectActive ? false : true);
+    }
+    
     return(
         <>
         <SectionWrapper>
@@ -18,16 +26,23 @@ export function ProjectsSection(){
     
                     Se desejar, fique à vontade para explorar os projetos que venho desenvolvendo.
                     </DivResume>
-                    <Button> 
-                        Ver projetos 
+                    
+                    <Button onClick={handleClick}> 
+                        {projectActive ? 'Fechar projetos': 'Ver projetos'}
                     </Button>
             </TopContainer>
 
             <BotContainer>
 
-                {Object.values(projects).map((project, index) => (
-                    <DivProject key={index} project={project}/>
-                ))}
+            {projectActive ? (
+                    // Se projectActive for true, renderiza todos os projetos
+                    projects.map((project, index) => (
+                        <DivProject key={index} project={project}/>
+                    ))
+                ) : (
+                    // Se projectActive for false, renderiza apenas o primeiro projeto
+                    <DivProject key={0} project={projects[0]}/>
+                )}
                 
             </BotContainer>
 

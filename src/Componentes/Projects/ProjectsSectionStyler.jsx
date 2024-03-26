@@ -1,19 +1,4 @@
-import styled, {keyframes} from "styled-components";
-
-const waveAnimation = keyframes`
-    0% {
-        transform: perspective(500px) rotateY(0deg);
-    }
-    33% {
-        transform: perspective(500px) rotateY(-7deg);
-    }
-    66% {
-        transform: perspective(500px) rotateY(7deg);
-    }
-    100% {
-        transform: perspective(500px) rotateY(0deg);
-    }
-`;
+import styled from "styled-components";
 
 const SectionWrapper = styled.section`
     display: flex;
@@ -66,11 +51,11 @@ const Button = styled.button`
     margin: 35px;
     color: ${(props)=>props.theme.temacores.color.dark.colorFont};
     cursor: pointer;
-    transition: transform 1.5s linear;
+    transition: transform .3s linear;
 
     &:hover {
-        animation: ${waveAnimation} 1.5s linear infinite;
-}   
+        transform: scale(95%);
+    }   
 `;
 
 const BotContainer = styled.section` //Modificar dimenções depois para acompanhar (W H) a responsividade,  propsiedades apenas de testes!!
